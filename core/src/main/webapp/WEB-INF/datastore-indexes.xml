@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<datastore-indexes
+  autoGenerate="true">
+    <datastore-index kind="Member" ancestor="false">
+        <property name="Email" direction="asc" />
+        <property name="Pwd" direction="desc" />
+        <property name="Surname" direction="asc" />
+        <property name="Gender" direction="desc" />
+        <property name="Telephone" direction="asc" /> 
+    </datastore-index> 
+</datastore-indexes>
+
+
+
+
+
+
+<!-- The <datastore-indexes> element has an autoGenerate attribute that controls 
+whether this file should be considered along with automatically generated index 
+configuration. See Using Automatic Index Configuration below. -->
+
+<!-- Each <datastore-index> element represents an index.
+ The kind attribute specifies the kind of the entities to index. 
+ The ancestor attribute is true if the index supports queries that filter by 
+ ancestor-key to constrain results to a single entity group, false otherwise. -->
+
+<!-- The <property> elements in a <datastore-index> represent the entity properties to index.
+ The name attribute is the property name, and the direction attribute is the sort order, 
+ either asc for ascending or desc for descending.
+  The order of the property elements specifies the order in the 
+  index: rows are sorted by the first property, then the second property, and so on -->
